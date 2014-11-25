@@ -10,12 +10,13 @@ a "go build" will generate executable named "consul-backup"
 
 
 Usage:
-consul-backup [-i IP:PORT] [--restore] <filename>
-consul-backup -h | --help
-consul-backup --version
+  consul-backup [-i IP:PORT] [-t TOKEN] [--restore] <filename>
+  consul-backup -h | --help
+  consul-backup --version
 
 Options:
--h --help     Show this screen.
---version     Show version.
--i, --address=IP:PORT  The HTTP endpoint of Consul [default: 127.0.0.1:8500].
--r, --restore     Activate restore mode
+  -h --help     Show this screen.
+  --version     Show version.
+  -i, --address=IP:PORT  The HTTP endpoint of Consul [default: 127.0.0.1:8500].
+  -t, --token=TOKEN  An ACL Token with proper permissions in Consul [default: ].
+  -r, --restore     Activate restore mode
